@@ -1,50 +1,50 @@
 [
   {
     "id": 1,
-    "image": "/assets/images/beth.jpg"
+    "image": "/images/beth.jpg"
   },
   {
     "id": 2,
-    "image": "/assets/images/birdperson.jpg"
+    "image": "/images/birdperson.jpg"
   },
   {
     "id": 3,
-    "image": "/assets/images/evilmorty.jpg"
+    "image": "/images/evilmorty.jpg"
   },
   {
     "id": 4,
-    "image": "/assets/images/gianthead.jpg"
+    "image": "/images/gianthead.jpg"
   },
   {
     "id": 5,
-    "image": "/assets/images/goldenford.jpg"
+    "image": "/images/goldenford.jpg"
   },
   {
     "id": 6,
-    "image": "/assets/images/jerry.jpg"
+    "image": "/images/jerry.jpg"
   },
   {
     "id": 7,
-    "image": "/assets/images/jessica.jpg"
+    "image": "/images/jessica.jpg"
   },
   {
     "id": 8,
-    "image": "/assets/images/meeseeks.jpg"
+    "image": "/images/meeseeks.jpg"
   },
   {
     "id": 9,
-    "image": "/assets/images/morty.jpg"
+    "image": "/images/morty.jpg"
   },
   {
     "id": 10,
-    "image": "/assets/images/mr.jpg"
+    "image": "/images/mr.jpg"
   },
   {
     "id": 11,
-    "image": "/assets/images/rick.jpg"
+    "image": "/images/rick.jpg"
   },
   {
     "id": 12,
-    "image": "/assets/images/summer.jpg"
+    "image": "/images/summer.jpg"
   }
 ]
