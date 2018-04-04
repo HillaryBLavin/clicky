@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/images/beth.jpg"
+  },
+  {
+    "id": 2,
+    "image": "/assets/images/birdperson.jpg"
+  },
+  {
+    "id": 3,
+    "image": "/assets/images/evilmorty.jpg"
+  },
+  {
+    "id": 4,
+    "image": "/assets/images/gianthead.jpg"
+  },
+  {
+    "id": 5,
+    "image": "/assets/images/goldenford.jpg"
+  },
+  {
+    "id": 6,
+    "image": "/assets/images/jerry.jpg"
+  },
+  {
+    "id": 7,
+    "image": "/assets/images/jessica.jpg"
+  },
+  {
+    "id": 8,
+    "image": "/assets/images/meeseeks.jpg"
+  },
+  {
+    "id": 9,
+    "image": "/assets/images/morty.jpg"
+  },
+  {
+    "id": 10,
+    "image": "/assets/images/mr.jpg"
+  },
+  {
+    "id": 11,
+    "image": "/assets/images/rick.jpg"
+  },
+  {
+    "id": 12,
+    "image": "/assets/images/summer.jpg"
+  }
+]
