@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import { Shake } from "reshake";
 import CharacterCard from "./components/CharacterCard";
 import Wrapper from "./components/Wrapper";
 import Navbar from "./components/Navbar";
@@ -15,7 +16,8 @@ class App extends Component {
     guessArray: [],
     message: "Click an image to begin!",
     score: 0,
-    topScore: 0
+    topScore: 0,
+    shake: 0
   };
 
   // Card is clicked
@@ -25,18 +27,20 @@ class App extends Component {
     // If we already clicked this card...
     if (guessArray[card.id]) {
       this.setState({
-        message: "You already guessed that! Start over!",
+        message: "You already guessed that! Starting over!",
         topScore: Math.max(this.state.score, this.state.topScore),
         guessArray: [],
-        score: 0
+        score: 0,
+        shake: 0.75
       })
     // Otherwise it was a good guess!
     } else {
       guessArray[card.id] = true;
       this.setState({
-        message: "You guessed correctly!",
+        message: "Good Guess!",
         guessArray: guessArray,
-        score: ++score
+        score: ++score,
+        shake: 0
       })
     }
   };
@@ -44,24 +48,42 @@ class App extends Component {
   // Render the page
   render() {
     return (
-      <div id="imagesGrid">
+
+      <div>
         <Navbar
           message={this.state.message}
           score={this.state.score}
           topScore={this.state.topScore}/>
         <Jumbotron/>
-        <Wrapper>
-          {characters
-            .sort(function (a, b) {
-              return 0.5 - Math.random()
-            })
-            .map(randomCard => (<CharacterCard
-              clickCard={this.clickCard}
-              id={randomCard.id}
-              key={randomCard.id}
-              image={randomCard.image}/>))}
-        </Wrapper>
+
+        <Shake 
+          h={25}
+          v={10}
+          r={0}
+          q={this.state.shake}
+          dur={650}
+          int={2.6}
+          max={40}
+          fixed={true}
+          fixedStop={false}
+          freez={false}>
+
+          <Wrapper>
+            {characters
+              .sort(function (a, b) {
+                return 0.5 - Math.random()
+              })
+              .map(randomCard => (<CharacterCard
+                clickCard={this.clickCard}
+                id={randomCard.id}
+                key={randomCard.id}
+                image={randomCard.image}/>))}
+          </Wrapper>
+
+        </Shake>
+
         <Footer/>
+
       </div>
     );
   }

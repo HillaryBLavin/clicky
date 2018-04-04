@@ -2,11 +2,15 @@
   "name": "clicky",
   "version": "0.1.0",
   "private": false,
+  "author": "Steve Zinski",
+  "license": "ISC",
   "homepage": "http://szinski.github.io/clicky",
   "dependencies": {
+    "npm": "^5.8.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
-    "react-scripts": "^1.1.4"
+    "react-scripts": "^1.1.4",
+    "reshake": "^1.0.8"
   },
   "scripts": {
     "start": "react-scripts start",
