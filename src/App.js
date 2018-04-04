@@ -54,11 +54,13 @@ class App extends Component {
     return (
 
       <div>
+
         <Navbar
           message={this.state.message}
           score={this.state.score}
-          topScore={this.state.topScore}/>
-        <Jumbotron/>
+          topScore={this.state.topScore} />
+
+        <Jumbotron />
 
         {/* Use "reshake" to shake the page on a wrong answer */}
         <Shake 
@@ -75,9 +77,7 @@ class App extends Component {
 
           <Wrapper>
             {characters
-              .sort(function (a, b) {
-                return 0.5 - Math.random()
-              })
+              .sort((a, b) => 0.5 - Math.random())
               .map(randomCard => (<CharacterCard
                 clickCard={this.clickCard}
                 id={randomCard.id}
@@ -87,7 +87,7 @@ class App extends Component {
 
         </Shake>
 
-        <Footer/>
+        <Footer />
 
       </div>
     );
