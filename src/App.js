@@ -21,6 +21,7 @@ class App extends Component {
   // Card is clicked
   clickCard = card => {
     let guessArray = this.state.guessArray;
+    let score = this.state.score;
     // If we already clicked this card...
     if (guessArray[card.id]) {
       this.setState({
@@ -35,7 +36,7 @@ class App extends Component {
       this.setState({
         message: "You guessed correctly!",
         guessArray: guessArray,
-        score: ++this.state.score
+        score: ++score
       })
     }
   };
