@@ -1,3 +1,8 @@
+// Clicky
+// Written by Steve Zinski
+// University of Richmond Coding Boot Camp
+
+
 import React, {Component} from "react";
 import { Shake } from "reshake";
 import CharacterCard from "./components/CharacterCard";
@@ -6,7 +11,6 @@ import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";
 import Footer from "./components/Footer";
 import characters from "./characters.json";
-import "./App.css";
 
 
 class App extends Component {
@@ -56,6 +60,7 @@ class App extends Component {
           topScore={this.state.topScore}/>
         <Jumbotron/>
 
+        {/* Use "reshake" to shake the page on a wrong answer */}
         <Shake 
           h={25}
           v={10}
