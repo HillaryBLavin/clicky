@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/images/beth.jpg"
+    "image": "%PUBLIC_URL%/images/beth.jpg"
   },
   {
     "id": 2,
